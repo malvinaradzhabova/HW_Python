@@ -20,8 +20,9 @@
 res_first_day = float(input("Enter result first day: "))
 gen_res = float(input("Enter general result: "))
 day = 1
-print(f"Athlete achieved a result on {day} day: {res_first_day:.2f}")
+print(f"{day} day: {res_first_day:.2f}km")
 while res_first_day < gen_res:
     res_first_day += res_first_day / 10
     day += 1
-    print(f"Athlete achieved a result on {day} day: {res_first_day:.2f}")
+    print(f"{day} day: {res_first_day:.2f}km")
+print(f"Athlete achieved a result on {day} day -at least {gen_res:.0f}km")
